@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wrist Size</title>
+<style>
+  :root {
+    --bg: #0d0c10; --surface: #17151c; --line: rgba(240,235,225,0.12);
+    --brass: #e0be86; --text: #f5f1ea; --muted: #a49e93;
+    --disp: ui-rounded, "SF Pro Rounded", system-ui, -apple-system, sans-serif;
+    --ui: -apple-system, system-ui, "Segoe UI", Roboto, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; background: var(--bg); color: var(--text);
+    font-family: var(--ui); -webkit-font-smoothing: antialiased;
+    display: grid; place-items: center; text-align: center; padding: 24px;
+  }
+  .wrap { max-width: 420px; }
+  .glyph {
+    width: 68px; height: 68px; border-radius: 20px; margin: 0 auto 20px;
+    display: grid; place-items: center; color: var(--brass);
+    background: radial-gradient(120% 120% at 30% 20%, rgba(224,190,134,0.22), rgba(224,190,134,0.05));
+    border: 1px solid var(--line);
+  }
+  h1 { font-family: var(--disp); font-size: 30px; font-weight: 640; letter-spacing: -0.02em; margin: 0 0 8px; }
+  p { color: var(--muted); font-size: 16px; line-height: 1.5; margin: 0 0 28px; }
+  .links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  a.btn {
+    display: inline-block; padding: 12px 22px; border-radius: 999px;
+    background: var(--brass); color: #1a1206; font-weight: 600; text-decoration: none;
+  }
+  a.btn.ghost { background: transparent; color: var(--brass); border: 1px solid var(--line); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="glyph">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="6" y="2.5" width="12" height="19" rx="3"/>
+        <path d="M9 6h6M9 18h6"/>
+      </svg>
+    </div>
+    <h1>Wrist Size</h1>
+    <p>Measure your wrist for bands, bracelets, and watches that fit — entirely on your iPhone.</p>
+    <div class="links">
+      <a class="btn" href="support.html">Support</a>
+      <a class="btn ghost" href="privacy.html">Privacy</a>
+    </div>
+  </div>
+</body>
+</html>
